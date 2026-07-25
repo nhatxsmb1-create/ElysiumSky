@@ -1,0 +1,24 @@
+# ElysiumSky Config
+prefix: "&b[Sky] &r"
+
+island:
+  # Diem nhan duoc khi dat/pha block (dung de tinh island level)
+  block-points:
+    COBBLESTONE: 1
+    STONE: 2
+    SAND: 1
+    GRAVEL: 1
+    OAK_LOG: 3
+    IRON_ORE: 5
+    GOLD_ORE: 10
+    LAPIS_ORE: 8
+    REDSTONE_ORE: 8
+    DIAMOND_ORE: 50
+    EMERALD_ORE: 75
+    ANCIENT_DEBRIS: 150
+    OBSIDIAN: 8
+    IRON_BLOCK: 40
+    GOLD_BLOCK: 80
+    DIAMOND_BLOCK: 400
+    EMERALD_BLOCK: 600
+    NETHERITE_BLOCK: 1200
