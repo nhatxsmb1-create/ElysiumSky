@@ -1,0 +1,116 @@
+# Dinh nghia tat ca quests tai day
+# Type objective: BREAK_BLOCK, PLACE_BLOCK, KILL_MOB, COLLECT_ITEM, REACH_ISLAND_LEVEL
+# Type reward: MONEY, EXP, ISLAND_POINTS
+
+quests:
+  starter:
+    name: "Nguoi Moi"
+    description: "Bat dau hanh trinh tren dao cua ban"
+    required-level: 0
+    required-quest: ""
+    objectives:
+      obj1:
+        type: BREAK_BLOCK
+        target: STONE
+        amount: 50
+      obj2:
+        type: PLACE_BLOCK
+        target: COBBLESTONE
+        amount: 20
+    rewards:
+      rew1:
+        type: MONEY
+        value: ""
+        amount: 500
+      rew2:
+        type: EXP
+        value: ""
+        amount: 100
+      rew3:
+        type: ISLAND_POINTS
+        value: ""
+        amount: 50
+
+  lumberjack:
+    name: "Tho Moc"
+    description: "Chat cay de xay dung dao"
+    required-level: 0
+    required-quest: "starter"
+    objectives:
+      obj1:
+        type: BREAK_BLOCK
+        target: OAK_LOG
+        amount: 64
+      obj2:
+        type: BREAK_BLOCK
+        target: BIRCH_LOG
+        amount: 32
+    rewards:
+      rew1:
+        type: MONEY
+        value: ""
+        amount: 800
+      rew2:
+        type: EXP
+        value: ""
+        amount: 150
+
+  slayer:
+    name: "Thu San Quai"
+    description: "Diet cac sinh vat de bao ve dao"
+    required-level: 5
+    required-quest: "starter"
+    objectives:
+      obj1:
+        type: KILL_MOB
+        target: ZOMBIE
+        amount: 10
+      obj2:
+        type: KILL_MOB
+        target: SKELETON
+        amount: 10
+    rewards:
+      rew1:
+        type: MONEY
+        value: ""
+        amount: 1000
+      rew2:
+        type: EXP
+        value: ""
+        amount: 200
+      rew3:
+        type: ISLAND_POINTS
+        value: ""
+        amount: 200
+
+  miner:
+    name: "Tho Mo"
+    description: "Khai thac tai nguyen quy gia"
+    required-level: 10
+    required-quest: "lumberjack"
+    objectives:
+      obj1:
+        type: BREAK_BLOCK
+        target: IRON_ORE
+        amount: 32
+      obj2:
+        type: BREAK_BLOCK
+        target: GOLD_ORE
+        amount: 16
+      obj3:
+        type: BREAK_BLOCK
+        target: DIAMOND_ORE
+        amount: 5
+    rewards:
+      rew1:
+        type: MONEY
+        value: ""
+        amount: 3000
+      rew2:
+        type: EXP
+        value: ""
+        amount: 500
+      rew3:
+        type: ISLAND_POINTS
+        value: ""
+        amount: 500
