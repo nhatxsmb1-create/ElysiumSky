@@ -1,0 +1,28 @@
+name: ElysiumSky
+version: 1.0.0
+main: dev.elysium.sky.ElysiumSky
+api-version: '1.21'
+authors:
+  - Elysium
+description: Skyblock extension for Elysium Fantasy Server
+
+depend:
+  - ElysiumCore
+
+softdepend:
+  - IridiumSkyblock
+
+commands:
+  sky:
+    description: ElysiumSky main command
+    aliases: [island, dao]
+    permission: elysium.sky.use
+    usage: /sky <quest|level|upgrade>
+
+permissions:
+  elysium.sky.use:
+    description: Use ElysiumSky commands
+    default: true
+  elysium.sky.admin:
+    description: Admin access
+    default: op
